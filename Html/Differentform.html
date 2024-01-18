@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+<style>
+    h2{
+        text-align: center !important;
+    }
+
+    h1{
+        text-align: center;
+    }
+    table ,tr,td,th{
+        margin-left: 30% !important;
+        
+        text-align: center;
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 40% !important;
+        caption-side: bottom !important;
+    }
+</style>
+<body>
+
+    <h1>Create Table Section</h1>
+    <hr>
+    <table>
+
+        <tr><th col>Name</th>
+        
+            <th>Subject</th>
+            <th>Marks</th>
+
+        </tr>
+        <tr><td>deepa</td>
+        
+            <td>Hindi</td>
+            <td>30</td>
+        </tr>
+
+        <tr><td>Manish</td>
+        
+            <td>English</td>
+            <td>70</td>
+        </tr>
+        <tr><td>Reeta</td>
+        
+            <td>Math</td>
+            <td>80</td>
+        </tr>
+        <tr><td>Rakhi</td>
+        
+            <td>Science</td>
+            <td>90</td>
+        </tr>
+    </table>
+    <hr>
+
+
+    <caption>Next table Creation</caption>
+
+    <table>
+
+        <tr>
+            <th col>Name</th>
+        
+            <th>Subject</th>
+           
+
+        </tr>
+        
+        <tr><td colspan="3">deepa</td>
+        
+           
+           
+        </tr>
+
+        <tr>
+            <td>70</td>
+        </tr>
+        <tr><td rowspan="3">Reeta</td>
+        
+          
+            <td>80</td>
+        </tr>
+        <tr><td>Rakhi</td>
+        
+           
+            <td>90</td>
+        </tr>
+    </table>
+
+    <hr>
+<!-- change row column background color -->
+
+<h2>change row column background color</h2>
+    <table>
+        <colgroup>
+        <col span="1">
+       
+
+        <col span="1"  style="background-color: brown;">
+         <!-- hide column property in css visiblity:"collapse" -->
+        <!-- <col span="1" style="visibility: collapse;"> -->
+        <col span="1">
+        <col span="1"  style="background-color: brown;">
+        </colgroup>
+
+        <tr>
+            <th >Name</th>
+            <th>Subject</th>
+            <th>marks</th>
+            <th>Created</th>
+            <th>Total</th>
+           
+
+        </tr>
+        
+       
+
+        
+        
+        <tr><td>Rakhi</td>
+        
+           
+            <td>English</td>
+            <td>90</td>
+            <td>18-jan-24</td>
+            <td>90</td>
+        </tr>
+        
+    </table>
+
+
+
+
+    
+</body>
+</html>
