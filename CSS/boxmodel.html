@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: blue;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 3px solid rgb(54, 18, 18);
+            background-color: blueviolet;
+            margin: 10px;
+            padding: 5px;
+            
+        }
+        #A{
+            background-color: aqua;
+        }
+        #b{
+            background-color: rgb(255, 0, 115);
+        }
+        #c{
+            background-color: rgb(204, 255, 0);
+        }
+        h3{
+            text-align: center;
+        }
+
+        #div1{
+            background-color: rgb(22, 166, 166);
+            height: 300px;
+            width: 500px;
+            border: 2px solid black;
+        }
+
+        #div2{
+            background-color: rgb(255, 0, 123);
+            height: 200px;
+            width: 400px;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+        #div3{
+            background-color:chartreuse;
+            height: 100px;
+            width: 300px;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        p{
+            color: black;
+            text-align: center;
+            margin-top: 20px;}
+        p:hover{
+            color: red;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+    <hr>
+    <div class="box" id="A">
+
+
+        <div class="box" id="b"><div class="box" id="c"><h3>Box Model</h3></div></div>
+    </div>
+    <br><br>
+
+    <hr>
+
+    <div id="div1">
+        <div id="div2">
+
+            <div id="div3"><p>box model</p></div>
+        </div>
+    </div>
+   
+    
+
+
+</body>
+</html>
