@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        .container{
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid gray;
+            display: flex !important;
+        }
+
+       
+        .box1{
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+
+            background-image: linear-gradient(red,blue);
+           
+        }
+
+        .box2{
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+          
+            background-image: linear-gradient( to right, red,blue);
+           
+        }
+
+        .box3{
+            border: 4px solid blueviolet;
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+           
+            background-image: linear-gradient( to left, red,blue); 
+           
+        }
+
+        .box4{
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+            /* background-image: linear-gradient(red,blue);
+            background-image: linear-gradient( to right, red,blue);
+            background-image: linear-gradient ( to left ,red,blue); */
+            background-image: linear-gradient( to top, red,blue);
+        }
+
+
+
+        .box12{
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+
+            background-image: linear-gradient(to bottom right, red,blue);
+           
+        }
+
+        .box22{
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+          
+            background-image: linear-gradient( to top right, red,blue);
+           
+        }
+
+        .box32{
+            border: 4px solid blueviolet;
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+           
+            background-image: linear-gradient( to  top left, red,blue); 
+           
+        }
+
+        .box42{
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+            /* background-image: linear-gradient(red,blue);
+            background-image: linear-gradient( to right, red,blue);
+            background-image: linear-gradient ( to left ,red,blue); */
+            background-image: linear-gradient(to bottom left, pink ,rgb(15, 219, 15));
+        }
+
+
+
+
+        /* redial gradients */
+
+        .box123{
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+
+            background-image: radial-gradient( red,blue,yellow,green);
+           
+        }
+
+        .box223{
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+          
+            background-image: radial-gradient(circle, red,blue);
+           
+        }
+
+        .box323{
+            border: 4px solid blueviolet;
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+           
+            background-image: linear-gradient( to  top left, red,blue); 
+           
+        }
+
+        .box423{
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+            margin: 10px;
+            /* background-image: linear-gradient(red,blue);
+            background-image: linear-gradient( to right, red,blue);
+            background-image: linear-gradient ( to left ,red,blue); */
+            background-image: linear-gradient(to bottom left, pink ,rgb(15, 219, 15));
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <!-- css grafients -->
+    <!-- Linear Gradient -->
+    <!-- syntax: background-image:linear-gradient(direction , color1,color,1) -->
+    <!-- Direction -->
+
+   <!-- 1. Default direction
+   2.Specific direction
+   3. using angles
+   4. using transparency -->
+    <h1>Css gradients </h1>
+    <h1>Linear gradients </h1>
+
+    <div class="container">
+       
+    <div class="box1"> Default direction(to top)</div>
+    <div class="box2">(to right)</div>
+    <div class="box3">to left</div>
+    <div class="box4">to bottom</div>
+
+</div>
+
+
+<div class="container">
+    <div class="box12">to bottom right</div>
+    <div class="box22">to top right</div>
+    <div class="box32">to top left</div>
+    <div class="box42">to bottom left</div>
+
+</div>
+
+<h1>Radial Gradient</h1>
+
+<div class="container">
+    <div class="box123">to bottom right</div>
+    <div class="box223">to top right</div>
+    <div class="box323">to top left</div>
+    <div class="box423">to bottom left</div>
+
+</div>
+    
+</body>
+</html>
