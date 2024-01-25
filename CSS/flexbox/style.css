@@ -1,0 +1,16 @@
+
+.container{
+    height: 450px;
+    border: 2px solid green;
+    display: flex;
+    /* direction property */
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;
+}
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+    padding: 8px;
+    width: 80px;
+    height: 200px;
+}
