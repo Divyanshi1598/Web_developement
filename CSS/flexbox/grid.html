@@ -1,0 +1,100 @@
+<!-- Css Grid -->
+
+
+<!-- A grid is a collection of horizental and verticle lines creating a pattern against which we can line up our design elements.
+they help us to create layouts in which our elements won't jump around or change width as we move from page to page,
+providing greater consistency on our websites.. -->
+
+<!-- 1. css grid layout is a two-dimensional layout system for the web.
+2. it lets you lay content out in rows and columns. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: brown;
+        height: 500px;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns:100px repeat(2,4fr) ;
+        grid-template-rows:repeat(2,1fr);
+        gap: 5px;
+    }
+    .container2{
+        background-color: rgb(42, 165, 83);
+        height: 600px;
+        border: 6px solid black;
+        display: grid;
+        grid-template-columns:150px 1fr 1fr 150px ;
+        grid-template-rows: 30px 1fr 30px;
+        gap: 5px;
+    }
+    .box{
+        background-color: aqua;
+        border: 3px solid black;
+        /* width: 80px; */
+        height: 100px;
+    }
+    #box1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+    #boxd1, #boxd4 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+
+    }
+    #boxd1{
+        
+    }
+
+    #boxd3{
+        grid-column-start: 2;
+        grid-column-end: 4;
+
+    }
+</style>
+<body>
+    <h1>Grid css</h1>
+    <div class="container">
+    
+        <div class="box" id="box1">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+
+        <div class="box">box9</div>
+        <div class="box">box10</div>
+    
+       
+
+        
+    </div>
+    <hr>
+    <br>
+    <div class="container2">
+    
+        <div class="box" id="boxd1">box1</div>
+        <div class="box" id="boxd2">box2</div>
+        <div class="box"  id="boxd3">box3</div>
+        <div class="box"  id="boxd5">box5</div>
+        <div class="box"  id="boxd4">box4</div>
+
+
+    </div>
+
+</body>
+</html>
