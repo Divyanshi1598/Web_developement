@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        height: 615px;
+        background-color: yellow;
+        border: 2px solid red;
+    }
+    .box{
+        height: 212px;
+        width: 212px;
+        border: 2px solid green;
+        background-color: aquamarine;
+
+        animation-name: divyanshi;
+        animation-duration: 2s;
+        animation-iteration-count:4 ;
+        animation-direction: reverse;
+        animation-timing-function: ease-in;
+        /* animation-delay: 1s; */
+    }
+    .box2{
+        height: 212px;
+        width: 212px;
+        border: 2px solid red;
+        background-color:aqua;
+
+        animation-name: divya;
+        animation-duration: 2s;
+        animation-iteration-count:infinite ;
+        /* animation-direction: normal; */
+        animation-timing-function: ease;
+        animation-delay: 1s;
+        animation-fill-mode:forwards;
+
+    }
+    @keyframes divya {
+        0%{
+            width: 212px;
+            background-color: blue;
+
+        }
+        30%{
+            width: 35%;
+            background-color: blueviolet;
+
+        }
+        65%{
+            width: 70%;
+            background-color: brown;
+
+        }
+        100%{
+            width: 100%;
+            background-color: cadetblue;
+
+        }
+    }
+
+    @keyframes divyanshi {
+        from{
+            width: 210px;
+
+        }
+        to{
+            width: 800px;
+        }
+        
+    }
+</style>
+<body>
+    <h1>Animation</h1>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box2">1</div>
+    </div>
+</body>
+</html>
